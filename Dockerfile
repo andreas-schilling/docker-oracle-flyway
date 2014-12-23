@@ -8,5 +8,7 @@ RUN tar -xzf flyway-commandline-3.1.tar.gz
 
 WORKDIR flyway-3.1
 
-ADD ojdbc6.jar flyway-3.1/jars/
+ADD ojdbc6.jar flyway-3.1/drivers/
+ADD sql/* sql/
 
+RUN sqlplus system/oracle @sql/setup_user.sql
