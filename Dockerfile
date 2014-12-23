@@ -11,6 +11,4 @@ WORKDIR flyway-3.1
 ADD ojdbc6.jar flyway-3.1/drivers/
 ADD sql/* sql/
 
-RUN locate sqlplus
 RUN /u01/app/oracle/product/11.2.0/xe/bin/sqlplus system/oracle @sql/setup_user.sql
-
