@@ -14,5 +14,5 @@ ADD sql/* sql/
 ENV ORACLE_HOME /u01/app/oracle/product/11.2.0/xe
 ENV PATH $ORACLE_HOME/bin:$PATH
 ENV ORACLE_SID XE
-CMD sleep 10
-CMD sqlplus system/oracle @sql/setup_user.sql
+# CMD sleep 10
+# CMD sqlplus system/oracle @sql/setup_user.sql
