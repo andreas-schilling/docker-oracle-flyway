@@ -14,4 +14,7 @@ ADD sql/* sql/
 ADD oracle/* oracle/
 RUN chmod +x oracle/wait_for_oracle.sh
 
+ADD conf/* flyway-3.1/conf/
+ADD migration/* flyway-3.1/sql/
+
 CMD bash -C './start.sh';'bash'
