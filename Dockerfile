@@ -4,6 +4,7 @@ MAINTAINER Andreas Schilling <andreas_schilling@gmx.net>
 
 # Install java8
 RUN apt-get update -y
+RUN apt-get install python-software-properties -y
 RUN apt-get install software-properties-common -y
 RUN add-apt-repository ppa:webupd8team/java -y
 RUN apt-get update -y
