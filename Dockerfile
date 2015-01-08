@@ -11,5 +11,6 @@ RUN tar -xzf flyway-commandline-3.1.tar.gz
 
 ADD ojdbc6.jar flyway-3.1/drivers/
 ADD sql/* sql/
+ADD oracle/* oracle/
 
 CMD bash -C './start.sh';'bash'
